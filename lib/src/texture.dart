@@ -56,7 +56,8 @@ abstract class Texture {
       case 'mipmaplinearlinear':
         return TextureFilter.mipMapLinearLinear;
       default:
-        throw ArgumentError('Unknown texture filter $text');
+        return TextureFilter.linear;
+      // throw ArgumentError('Unknown texture filter $text');
     }
   }
 
@@ -69,7 +70,8 @@ abstract class Texture {
       case 'repeat':
         return TextureWrap.repeat;
       default:
-        throw ArgumentError('Unknown texture wrap $text');
+        return TextureWrap.repeat;
+      // throw ArgumentError('Unknown texture wrap $text');
     }
   }
 }
