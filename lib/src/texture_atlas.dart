@@ -167,7 +167,8 @@ class TextureAtlas implements Disposable {
         return 270;
 
       default:
-        throw ArgumentError('unsupported value `$value` for rotate.');
+        // throw ArgumentError('unsupported value `$value` for rotate.');
+        return 0;
     }
   }
 }
